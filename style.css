@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+}
+
+/* ЗАСТАВКА - ТОЛЬКО ЗАГОЛОВОК */
+#introScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+    z-index: 1000;
+}
+
+.intro-content {
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    padding: 40px;
+}
+
+.intro-content h1 {
+    font-size: 3.2em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.intro-content .subtitle {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.start-btn {
+    background: white;
+    color: #ff6b6b;
+    border: none;
+    padding: 15px 50px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* СЛАЙД-ШОУ */
+.hidden {
+    display: none;
+}
+
+#slideshowScreen {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.slideshow-container {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 95%;          /* Занимает почти всю ширину */
+    max-width: 900px;    /* ОЧЕНЬ БОЛЬШОЙ */
+    height: auto;
+    max-height: 80vh;    /* 80% высоты экрана */
+    object-fit: cover;
+    border-radius: 25px;
+    margin-bottom: 35px;
+    border: 6px solid white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.slide-text {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 2em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.next-btn {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.slide-counter {
+    color: white;
+    font-size: 1em;
+}

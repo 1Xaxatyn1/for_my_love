@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Для моей любимой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ЗАСТАВКА - ТОЛЬКО ЗАГОЛОВОК И КНОПКА -->
+    <div id="introScreen">
+        <div class="intro-content">
+            <h1>Посвящается самой прекрасной в мире девушке</h1>
+            <div class="subtitle">Маленький альбом очень большой любви</div>
+            <button class="start-btn" onclick="showSlideshow()">Далее</button>
+        </div>
+    </div>
+
+    <!-- СЛАЙД-ШОУ - ТУТ БУДУТ ФОТО И ТЕКСТ -->
+    <div id="slideshowScreen" class="hidden">
+        <div class="slideshow-container">
+            <!-- Слайд 1 -->
+            <div class="slide active">
+                <img src="первая фотография.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    25.02.2024 - день, когданачалась самая прекрасная пора моей жизни
+                </div>
+            </div>
+
+            <!-- Слайд 2 -->
+            <div class="slide">
+                <img src="дискордик.jpg" alt="Наше фото">
+                <div class="slide-text">
+                   наши посиделки в дискорде наполняли меня жизнью и делали счастливым
+                </div>
+            </div>
+
+            <!-- Слайд 3 -->
+            <div class="slide">
+                <img src="мой котик.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    для меня ты всегда котеночек
+                </div>
+            </div>
+
+            <!-- Слайд 4 -->
+            <div class="slide">
+                <img src="наш первйы месяц.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    первый месяц наших замечательных отношений
+                </div>
+            </div>
+
+            <!-- Слайд 5 -->
+            <div class="slide">
+                <img src="первое путешествие.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    наше первое совместное путешествие
+                </div>
+            </div>
+
+
+            <!-- Слайд 6 -->
+            <div class="slide">
+                <img src="лучшие момнты.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    обожаю такие моменты
+                </div>
+            </div>
+
+            <!-- Слайд 7 -->
+            <div class="slide">
+                <img src="фанаты.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    а тут за нами следили фанаты:)
+                </div>
+            </div>
+
+            <!-- Слайд 8 -->
+            <div class="slide">
+                <img src="у тебя дома.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    я обожал сидеть у тебя дома и проводить время вместе
+                </div>
+            </div>
+
+            <!-- Слайд 9 -->
+            <div class="slide">
+                <img src="самая красивая.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    ты самая красивая девушка во всей вселенной
+                </div>
+            </div>
+
+            <!-- Слайд 10 -->
+            <div class="slide">
+                <img src="выпускной.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    наш выпускной и первый шаг во взрослую жизнь
+                </div>
+            </div>
+
+            <!-- Слайд 11 -->
+            <div class="slide">
+                <img src="вторая фотография.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    наши замечательные ночные прогулки
+                </div>
+            </div>
+            
+            <!-- Слайд 12 -->
+            <div class="slide">
+                <img src="любовь.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    и наша самая нежная любовь
+                </div>
+            </div>
+
+            <!-- Слайд 13 -->
+            <div class="slide">
+                <img src="томск.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    а тут мы уже такие красивые в Томске
+                </div>
+            </div>
+             
+            <!-- Слайд 14 -->
+            <div class="slide">
+                <img src="день рождения.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    твой день рождения) <br>
+                    ты выглядела как королева!
+                </div>
+            </div>
+
+            <!-- Слайд 15 -->
+            <div class="slide">
+                <img src="кушать.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    а это я готовлю нам кушать)
+                </div>
+            </div>
+
+            <!-- Слайд 16 -->
+            <div class="slide">
+                <img src="наше первое крупное путешествие.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    это наше первое крупное путешествие <br>
+                    мы с тобой на другом континенте, просто фантастика
+                </div>
+            </div>
+
+            <!-- Слайд 17 -->
+            <div class="slide">
+                <img src="королева.jpg" alt="Наше фото">
+                <div class="slide-text">
+                    ты как всегда королева!<br>
+                    я восхищаюсь тобой!
+                </div>
+            </div>
+
+             <!-- Слайд 18 -->
+            <div class="slide">
+                <div class="slide-text">
+                    сегодня 640 дней как мы вместе.<br>
+                    самые замечательные и неповторимые 640 дней в моей жизни, большое спасибо, что ты у меня есть<br>
+                    я люблю тебя, малыш<3
+                </div>
+            </div>
+
+            <!-- Кнопка переключения -->
+            <button class="next-btn" onclick="nextSlide()">Следующее фото</button>
+            
+            <!-- Счетчик -->
+            <div class="slide-counter">
+                Фото <span id="currentSlide">1</span> из <span id="totalSlides">18</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
